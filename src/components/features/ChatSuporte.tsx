@@ -45,6 +45,8 @@ export function ChatSuporte() {
       });
       
       const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Erro desconhecido da API');
+      
       if (data.text) {
         setMessages(prev => [...prev, { role: 'model', content: data.text }]);
       }
