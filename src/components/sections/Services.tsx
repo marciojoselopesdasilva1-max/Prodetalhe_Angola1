@@ -1,42 +1,36 @@
 import { CheckCircle2, Battery, Settings, Disc, Droplet, Thermometer, ChevronRight, ShieldCheck } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
 
-import imgOleo from '@/src/assets/images/servico-oleo.jpg';
-import imgTravoes from '@/src/assets/images/servico-travoes.jpg';
-import imgBateria from '@/src/assets/images/servico-bateria.jpg';
-import imgAc from '@/src/assets/images/servico-ac.jpg';
-import imgTransmissao from '@/src/assets/images/servico-transmissao.webp';
-
 const mainServices = [
   { 
     icon: Droplet, 
     title: "Mudança de Óleo", 
     desc: "Óleos Premium e originais para prolongar a vida útil do motor.",
-    image: imgOleo
+    image: "/images/servico-oleo.jpg?v=2"
   },
   { 
     icon: ShieldCheck, 
     title: "Travões", 
     desc: "Substituição de pastilhas e discos com peças originais e garantia.",
-    image: imgTravoes
+    image: "/images/servico-travoes.jpg?v=2"
   },
   { 
     icon: Battery, 
     title: "Baterias", 
     desc: "Diagnóstico eletrónico e substituição imediata de baterias.",
-    image: imgBateria
+    image: "/images/servico-bateria.jpg?v=2"
   },
   { 
     icon: Thermometer, 
     title: "Climatização (AC)", 
     desc: "Carregamento de gás, higienização e reparação de compressores.",
-    image: imgAc
+    image: "/images/servico-ac.jpg?v=2"
   },
   { 
     icon: Settings, 
     title: "Transmissão", 
     desc: "Reparação de caixas manuais e automáticas, substituição de embraiagem.",
-    image: imgTransmissao
+    image: "/images/servico-transmissao.webp?v=2"
   }
 ];
 
