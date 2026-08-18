@@ -12,25 +12,25 @@ const mainServices = [
     icon: ShieldCheck, 
     title: "Travões", 
     desc: "Substituição de pastilhas e discos com peças originais e garantia.",
-    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=800&auto=format&fit=crop"
+    image: "https://i.postimg.cc/B601Vcdb/servico-travoes.jpg"
   },
   { 
     icon: Battery, 
     title: "Baterias", 
     desc: "Diagnóstico eletrónico e substituição imediata de baterias.",
-    image: "https://images.unsplash.com/photo-1621535497258-0d19de956b62?q=80&w=800&auto=format&fit=crop"
+    image: "https://i.postimg.cc/jjQjLVFY/servico-bateria.jpg"
   },
   { 
     icon: Thermometer, 
     title: "Climatização (AC)", 
     desc: "Carregamento de gás, higienização e reparação de compressores.",
-    image: "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=800&auto=format&fit=crop"
+    image: "https://i.postimg.cc/htVD5WgF/servico-ac.jpg"
   },
   { 
     icon: Settings, 
     title: "Transmissão", 
     desc: "Reparação de caixas manuais e automáticas, substituição de embraiagem.",
-    image: "https://images.unsplash.com/photo-1625047509168-a71c66940656?q=80&w=800&auto=format&fit=crop"
+    image: "https://i.postimg.cc/nV5nVchz/servico-transmissao.webp"
   }
 ];
 
