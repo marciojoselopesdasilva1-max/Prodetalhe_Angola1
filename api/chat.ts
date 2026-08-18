@@ -1,14 +1,26 @@
 import { GoogleGenAI } from '@google/genai';
 
 export default async function handler(req: any, res: any) {
+  // Configuração para CORS e OPTIONS (Preflight)
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+  );
+
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return;
+  }
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Método não permitido' });
   }
 
   try {
     const { messages } = req.body;
-    
-    // Inicializar o cliente com a chave de API das Variáveis de Ambiente da Vercel
     const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
     
     const systemInstruction = `Você é o Assistente Virtual e Consultor Técnico IA da Prodetalhe_Angola, uma oficina mecânica de elite localizada em Luanda, Angola.
@@ -45,8 +57,8 @@ export default async function handler(req: any, res: any) {
     });
 
     res.status(200).json({ text: response.text });
-  } catch (error) {
-    console.error('Erro na API de chat da Vercel:', error);
-    res.status(500).json({ error: 'Erro ao comunicar com a IA.' });
+  } catch (error: any) {
+    console.error('Erro na API de chat:', error);
+    res.status(500).json({ error: error.message || 'Erro ao comunicar com a IA.' });
   }
 }
