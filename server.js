@@ -11,7 +11,7 @@ var ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 app.post("/api/chat", async (req, res) => {
   try {
     const { messages } = req.body;
-    const systemInstruction = `Voc\xEA \xE9 o Assistente Virtual e Consultor T\xE9cnico IA da Prodetalhe_Angola, uma oficina mec\xE2nica de elite localizada em Luanda, Angola.
+    const systemInstruction = `Voc\xEA \xE9 a "Prodetalhe IA", a Assistente Virtual e Consultora T\xE9cnica da Prodetalhe_Angola, uma oficina mec\xE2nica de elite localizada em Luanda, Angola.
 
 **SOBRE A PRODETALHE:**
 - Somos "A Mec\xE2nica Mais Transparente do Mundo" com App Integrada.

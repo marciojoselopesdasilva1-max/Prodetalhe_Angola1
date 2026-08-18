@@ -13,7 +13,7 @@ type Message = {
 export function ChatSuporte() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'model', content: 'Olá! Sou o Consultor Técnico IA da Prodetalhe_Angola. Como posso ajudar com o seu carro hoje?' }
+    { role: 'model', content: 'Olá! Sou a Prodetalhe IA. Como posso ajudar com o seu carro hoje?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -70,7 +70,7 @@ export function ChatSuporte() {
               className="bg-[#FACC15] hover:bg-[#FACC15]/90 text-black p-4 rounded-full shadow-2xl flex items-center gap-2 font-bold transition-transform hover:scale-105"
             >
               <MessageSquare className="h-6 w-6" />
-              <span className="hidden sm:inline">Consultor IA</span>
+              <span className="hidden sm:inline">Prodetalhe IA</span>
             </motion.button>
           )}
         </AnimatePresence>
@@ -89,8 +89,8 @@ export function ChatSuporte() {
                 <div className="flex items-center gap-2">
                   <Bot className="h-6 w-6" />
                   <div>
-                    <h3 className="font-bold text-sm">Consultor Técnico IA</h3>
-                    <p className="text-xs font-medium opacity-80">Online e pronto a ajudar</p>
+                    <h3 className="font-bold text-sm">Prodetalhe IA</h3>
+                    <p className="text-xs font-medium opacity-80">Online e pronta a ajudar</p>
                   </div>
                 </div>
                 <button onClick={() => setIsOpen(false)} className="text-black/70 hover:text-black">

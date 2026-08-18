@@ -7,11 +7,13 @@ import { OrcamentoSimulador } from './components/features/OrcamentoSimulador';
 import { Schedule } from './components/features/Schedule';
 import { TransparencyPortal } from './components/features/TransparencyPortal';
 import { ChatSuporte } from './components/features/ChatSuporte';
+import { FloatingWhatsApp } from './components/features/FloatingWhatsApp';
 
 export default function App() {
   return (
     <div className="min-h-screen bg-[#121214] text-white selection:bg-[#FACC15] selection:text-black font-sans">
       <Header />
+      
       <main>
         <Hero />
         <Services />
@@ -20,9 +22,11 @@ export default function App() {
         <TransparencyPortal />
         <TrustSection />
       </main>
+      
       <Footer />
+      
       <ChatSuporte />
+      <FloatingWhatsApp />
     </div>
   );
 }
-

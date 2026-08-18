@@ -1,13 +1,13 @@
-import { ShieldCheck, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Logo } from '../ui/Logo';
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[#0a0a0b] text-zinc-400 py-12 md:py-16">
+    <footer className="border-t border-white/10 bg-black text-zinc-400 py-12 md:py-16">
       <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="h-8 w-8 text-[#FACC15]" />
-            <span className="text-xl font-bold tracking-tight text-white">Prodetalhe<span className="text-[#FACC15]">_Angola</span></span>
+            <Logo className="text-xl" />
           </div>
           <p className="text-sm">
             A mecânica mais transparente do mundo. Agora no seu telemóvel. Sem surpresas na fatura.

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { ShieldCheck, Phone, Menu, X } from 'lucide-react';
+import { Phone, Menu, X } from 'lucide-react';
+import { Logo } from '../ui/Logo';
 import { Button } from '../ui/button';
 import { AnimatePresence, motion } from 'motion/react';
 
@@ -10,11 +11,10 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#121214]/80 backdrop-blur-md">
+      <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/90 backdrop-blur-md">
         <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-2 z-50">
-            <ShieldCheck className="h-8 w-8 text-[#FACC15]" />
-            <span className="text-xl font-bold tracking-tight text-white">Prodetalhe<span className="text-[#FACC15]">_Angola</span></span>
+            <Logo className="text-xl" />
           </div>
           
           <nav className="hidden md:flex items-center gap-6">
@@ -55,7 +55,7 @@ export function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-[#121214] pt-24 px-4 md:hidden flex flex-col"
+            className="fixed inset-0 z-40 bg-black pt-24 px-4 md:hidden flex flex-col"
           >
             <nav className="flex flex-col gap-6 text-center mt-8">
               <a href="#servicos" onClick={closeMenu} className="text-2xl font-bold text-white hover:text-[#FACC15] transition-colors">Serviços</a>
