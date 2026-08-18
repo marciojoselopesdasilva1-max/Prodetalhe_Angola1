@@ -45,13 +45,13 @@ export function ChatSuporte() {
       });
       
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Erro desconhecido da API');
+      if (!res.ok) throw new Error(data.error || 'Erro da API: ' + res.status);
       
       if (data.text) {
         setMessages(prev => [...prev, { role: 'model', content: data.text }]);
       }
-    } catch (e) {
-      setMessages(prev => [...prev, { role: 'model', content: 'Desculpe, ocorreu um erro de conexão. Por favor, tente novamente ou ligue para nossa linha de apoio.' }]);
+    } catch (e: any) {
+      setMessages(prev => [...prev, { role: 'model', content: `ERRO TÉCNICO: ${e.message || 'Falha ao ligar à API. Verifique a consola.'}` }]);
     } finally {
       setIsLoading(false);
     }
