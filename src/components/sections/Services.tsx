@@ -6,31 +6,31 @@ const mainServices = [
     icon: Droplet, 
     title: "Mudança de Óleo", 
     desc: "Óleos Premium e originais para prolongar a vida útil do motor.",
-    image: "/images/servico-oleo.jpg?v=2"
+    image: "https://i.postimg.cc/15cRvrJP/servico-oleo.jpg"
   },
   { 
     icon: ShieldCheck, 
     title: "Travões", 
     desc: "Substituição de pastilhas e discos com peças originais e garantia.",
-    image: "/images/servico-travoes.jpg?v=2"
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=800&auto=format&fit=crop"
   },
   { 
     icon: Battery, 
     title: "Baterias", 
     desc: "Diagnóstico eletrónico e substituição imediata de baterias.",
-    image: "/images/servico-bateria.jpg?v=2"
+    image: "https://images.unsplash.com/photo-1621535497258-0d19de956b62?q=80&w=800&auto=format&fit=crop"
   },
   { 
     icon: Thermometer, 
     title: "Climatização (AC)", 
     desc: "Carregamento de gás, higienização e reparação de compressores.",
-    image: "/images/servico-ac.jpg?v=2"
+    image: "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=800&auto=format&fit=crop"
   },
   { 
     icon: Settings, 
     title: "Transmissão", 
     desc: "Reparação de caixas manuais e automáticas, substituição de embraiagem.",
-    image: "/images/servico-transmissao.webp?v=2"
+    image: "https://images.unsplash.com/photo-1625047509168-a71c66940656?q=80&w=800&auto=format&fit=crop"
   }
 ];
 
@@ -78,7 +78,7 @@ export function Services() {
           ))}
         </div>
 
-        {/* Sinais de Alerta Section */}
+        {/* Sinais de Alerta e Manutenção Section */}
         <div className="mt-24 mb-20">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 uppercase tracking-wide">Como saber que precisa de nós?</h2>
