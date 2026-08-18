@@ -1,0 +1,6 @@
+{
+  "name": "Prodetalhe_Angola",
+  "description": "O melhor site de oficina mecânica do mundo, focado em conveniência extrema, transparência radical e automação.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
